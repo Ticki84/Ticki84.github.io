@@ -1,3 +1,102 @@
+// ==UserScript==
+// @name        JVCSticker++
+// @namespace   JVCSticker++
+// @include     http://www.jeuxvideo.com/forums/*
+// @include     https://www.jeuxvideo.com/forums/*
+// @version     1.2.8
+// @grant       GM_addStyle
+// @updateURL   https://ticki84.github.io/JVCSticker++.meta.js
+// @downloadURL https://ticki84.github.io/JVCSticker++.user.js
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+// @icon        http://jv.stkr.fr/p/1kki
+// @author      Ticki84
+// @copyright   2016+, Ticki84
+// ==/UserScript==
+//
+//
+// == Paramètres ==
+// Options
+var espacementStickers = '10'; // plus ce nombre est petit, moins il sera affiché de stickers par ligne dans la prévisualisation
+var tailleStickers = '44'; // en px, modifie la taille des stickers de la prévisualisation
+var tailleFenetre = '150'; // en px, modifie la taille de la fenêtre de prévisualisation
+var modifierCouleurPosts = true; // si true, change la couleur de tous posts en blancs
+var couleurBackground = '#FFF'; // modifie la couleur de fond des posts si modifierCouleurPosts vaut true
+var couleurBordure = '#d5d5d5'; // modifilie la couleur de bordure des posts si modifierCouleurPosts vaut true
+var supprimerFond = true; // si true, supprime le fond des stickers ainsi que les bords noirs sur certaines images des posts mais peut ralentir le chargement et rends certaines images au bord noires aplaties
+var tailleSticker = '100'; // en %, taille des stickers des posts
+var stickerCliquable = false; // si true, rends les liens des stickers cliquables
+var supprStickersBan = true; // si true, supprime les stickers bannis
+var supprDesPosts = false; // si true, supprime les posts contenants des stickers bannis
+var stickerMessageDeSuppr = true; // si true, affiche un message à la place des stickers bannis
+var ISSOU = true; // ISSOU
+// Fin Options
+// Catégories - Ici vous pouvez déterminer les catégories à afficher
+var stickersHap = true;
+var stickersNoel = true;
+var stickersBridgely = true;
+var stickersDomDeVill = true;
+var stickersSaumon = true;
+var stickersRisitas = true;
+var stickersFaces = true;
+var stickersAutres = true;
+var stickersRex = true;
+var stickersBud = true;
+var stickersGrukk = true;
+var stickersLamasticot = true;
+var stickersVolt = true;
+var stickersFluffy = true;
+var stickersStore = true;
+var stickersAnime = false;
+var stickersFootball = true;
+var stickersXbox = false;
+var stickersXMen = false;
+// Fin Catégories
+// Ajouts - Ici vous pouvez déterminer si les catégories peuvent bénéficier de stickers supplémentaires
+var stickersHapPlus = true;
+var stickersBridgelyPlus = true;
+var stickersSaumonPlus = true;
+var stickersLamasticotPlus = true;
+var stickersStorePlus = true;
+var stickersFootballPlus = true;
+// Fin Ajouts
+// Suppression des Stickers - Permet d'ajouter ou de supprimer des stickers à votre liste de stickers bannis
+var stickersBanListe = [
+  // X-Men Apocalypse
+  'http://jv.stkr.fr/p/1miq',
+  'http://jv.stkr.fr/p/1min',
+  'http://jv.stkr.fr/p/1mim',
+  'http://jv.stkr.fr/p/1mig-fr',
+  'http://jv.stkr.fr/p/1mij-fr',
+  'http://jv.stkr.fr/p/1mio',
+  'http://jv.stkr.fr/p/1mik',
+  'http://jv.stkr.fr/p/1mip',
+  'http://jv.stkr.fr/p/1mif',
+  'http://jv.stkr.fr/p/1mii-fr',
+  'http://jv.stkr.fr/p/1mih-fr',
+  'http://jv.stkr.fr/p/1mil',
+  'http://jv.stkr.fr/p/1mie-fr',
+  'http://jv.stkr.fr/p/1mid-fr',
+  // Fin X-Men Apocalypse
+  // Xbox One
+  'http://jv.stkr.fr/p/1myf',
+  'http://jv.stkr.fr/p/1my7',
+  'http://jv.stkr.fr/p/1myc',
+  'http://jv.stkr.fr/p/1my9',
+  'http://jv.stkr.fr/p/1myb',
+  'http://jv.stkr.fr/p/1my6',
+  'http://jv.stkr.fr/p/1mye',
+  'http://jv.stkr.fr/p/1myx',
+  'http://jv.stkr.fr/p/1myd',
+  'http://jv.stkr.fr/p/1my4',
+  'http://jv.stkr.fr/p/1my8',
+  'http://jv.stkr.fr/p/1mya',
+  'http://jv.stkr.fr/p/1my5',
+  'http://jv.stkr.fr/p/1n28'  // Fin Xbox One
+];
+// Fin Suppression des Stickers
+// == Fin Paramètres ==
+//
+//
 function init(p,Y,l,Z,aa,ba,m,f,ca,q,r,t,n,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T){function a(a){var b=document.createElement("li");b.className="f-stkr-w";b.innerHTML='<div class="f-stkr f-no-sml" style="width:'+document.getElementsByClassName("f-stkrs f-cfx")[0].offsetWidth/p+'px"><span class="f-hlpr"></span><img src="'+a+'" style="max-height:'+Y+"px;max-width:"+Y+'px" data-code=""></div>';b.onclick=function(){"http://jv.stkr.fr/"==a.substr(0,18)?document.getElementById("message_topic").value+=
 "[[sticker:"+a.slice(18,-7)+"]]":document.getElementById("message_topic").value+=" "+a+" ";document.getElementById("message_topic").focus();document.getElementById("message_topic").trigger("change")};document.getElementsByClassName("f-stkrs f-cfx")[0].appendChild(b)}function d(e){for(var b=document.getElementsByClassName("f-stkrs f-cfx")[0];b.firstChild;)b.removeChild(b.firstChild);for(var b=document.querySelector('div[data-flg-tt="'+e+'"]'),c=b.parentElement.children.length,d=0;d<c;d++)if(-1!=b.parentElement.children[d].className.indexOf("f-active")){b.parentElement.children[d].className=
 b.parentElement.children[d].className.slice(0,-9);break}b.className+=" f-active";"Populaires"!=e||document.getElementsByClassName("f-stkrs f-cfx")[0].firstChild&&"http://jv.stkr.fr/p/1kki?f-ed=1"==document.getElementsByClassName("f-stkrs f-cfx")[0].firstChild.firstChild.secondChild.src?"Hap"!=e||document.getElementsByClassName("f-stkrs f-cfx")[0].firstChild&&"http://jv.stkr.fr/p/1kkh?f-ed=1"==document.getElementsByClassName("f-stkrs f-cfx")[0].firstChild.firstChild.secondChild.src?"Noel"!=e||document.getElementsByClassName("f-stkrs f-cfx")[0].firstChild&&
@@ -102,3 +201,4 @@ typeof N?N:!0;O="undefined"!==typeof O?O:!0;P="undefined"!==typeof P?P:!0;Q="und
 (b.disconnect(),W())})).observe(document.body,{childList:!0,subtree:!0,attributes:!1,characterData:!1});q&&(new MutationObserver(function(a,b){if(document.getElementsByClassName("bloc-pagi-default")[1]){b.disconnect();for(var c=document.getElementsByClassName("img-stickers"),d=c.length,g=0;g<d;g++)if(-1<$.inArray(c[g].src,T))if(r)c[g].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.removeChild(c[g].parentElement.parentElement.parentElement.parentElement.parentElement);else{if(t)if(c[g].previousSibling&&
 "red"==c[g].previousSibling.style.color)c[g].previousSibling.innerHTML+="Sticker supprim\u00e9! ";else{var f=document.createElement("div");f.style.color="red";f.innerHTML="Sticker supprim\u00e9! ";c[g].parentElement.insertBefore(f,c[g])}c[g].parentNode.removeChild(c[g]);g--}}})).observe(document.body,{childList:!0,subtree:!0,attributes:!1,characterData:!1});(new MutationObserver(function(a,b){var c=document.querySelector('div[data-flg-tt="Biblioth&egrave;que"]');c&&(b.disconnect(),c.parentElement.setAttribute("style",
 "display:none !important;height:0px !important;width:0px !important"))})).observe(document.body,{childList:!0,subtree:!0,attributes:!1,characterData:!1});(new MutationObserver(function(a,b){var c=document.querySelector('button[data-edit="stickers"]');c&&(b.disconnect(),c.onclick=function(){V()})})).observe(document.body,{childList:!0,subtree:!0,attributes:!1,characterData:!1})};
+init(espacementStickers, tailleStickers, tailleFenetre, modifierCouleurPosts, couleurBackground, couleurBordure, supprimerFond, tailleSticker, stickerCliquable, supprStickersBan, supprDesPosts, stickerMessageDeSuppr, ISSOU, stickersHap, stickersNoel, stickersBridgely, stickersDomDeVill, stickersSaumon, stickersRisitas, stickersFaces, stickersAutres, stickersRex, stickersBud, stickersGrukk, stickersLamasticot, stickersVolt, stickersFluffy, stickersStore, stickersAnime, stickersFootball, stickersXbox, stickersXMen, stickersHapPlus, stickersBridgelyPlus, stickersSaumonPlus, stickersLamasticotPlus, stickersStorePlus, stickersFootballPlus, stickersBanListe);
