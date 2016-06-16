@@ -1,0 +1,7 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<racine>
+	<version>1.5.0</version>
+	<changelog>- Test 1- Test 3</changelog>
+  <version>1.4.3</version>
+  <changelog>- Test 2</changelog>
+</racine>
