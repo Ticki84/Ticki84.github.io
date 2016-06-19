@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.4</version>
+	<changelog>- Correction d'un bug empêchant la fenêtre de mise à jour d'apparaître</changelog>
 	<version>1.5.3</version>
 	<changelog>- Correction de la demande de permissions nécessaire sur Chrome</changelog>
 	<version>1.5.2</version>
