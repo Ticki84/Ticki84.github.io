@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.3</version>
+	<changelog>- Correction de la demande de permissions nécessaire sur Chrome</changelog>
 	<version>1.5.2</version>
 	<changelog>- Correction du bug du bouton Edit</changelog>
 	<version>1.5.1</version>
