@@ -9,6 +9,7 @@
 // @downloadURL https://ticki84.github.io/JVCSticker++.user.js
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @require     https://ticki84.github.io/jquery.modal.min.js
+// @connect     https://ticki84.github.io/JVCSticker++.xml
 // @grant       GM_xmlhttpRequest
 // @grant       GM_getValue
 // @grant       GM_setValue
