@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.2</version>
+	<changelog>- Correction du bug du bouton Edit</changelog>
 	<version>1.5.1</version>
 	<changelog>- Correction du bug empêchant la suppression des fonds blancs</changelog>
 	<version>1.5.0</version>
