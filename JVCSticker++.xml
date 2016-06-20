@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
-	<version>1.5.8<version>
+	<version>1.5.8</version>
 	<changelog>- Correction du bug du son Finkiel- Suppression d'un sticker périmé</changelog>
 	<version>1.5.7</version>
 	<changelog>- Ajout d'un sticker Risitas- Correction du bug des sons de Risitas</changelog>
