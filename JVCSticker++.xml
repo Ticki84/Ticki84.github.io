@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.6</version>
+	<changelog>- Ajout de stickers- Amélioration de la détection des stickers</changelog>
 	<version>1.5.5</version>
 	<changelog>- Suppression du fond blanc: les stickers ne sont plus étirés- Seuls les stickers sont désormais concerner par le paramètre 'Stickers cliquables'</changelog>
 	<version>1.5.4</version>
