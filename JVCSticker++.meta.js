@@ -3,7 +3,7 @@
 // @namespace   JVCSticker++
 // @include     http://www.jeuxvideo.com/forums/*
 // @include     https://www.jeuxvideo.com/forums/*
-// @version     1.5.8
+// @version     1.5.9
 // @grant       GM_addStyle
 // @updateURL   https://ticki84.github.io/JVCSticker++.meta.js
 // @downloadURL https://ticki84.github.io/JVCSticker++.user.js

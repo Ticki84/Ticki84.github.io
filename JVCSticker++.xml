@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.9</version>
+	<changelog>- Ajout de stickers- Remplacement d'un sticker Risitas</changelog>
 	<version>1.5.8</version>
 	<changelog>- Correction du bug du son Finkiel- Suppression d'un sticker périmé</changelog>
 	<version>1.5.7</version>
