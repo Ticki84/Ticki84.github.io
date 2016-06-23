@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.11</version>
+	<changelog>- Ajout de stickers- Les vidéos Youtube démarrent désormais au temps indiqué- Correction d'un bug empêchant de changer la taille des stickers de la page</changelog>
 	<version>1.5.10</version>
 	<changelog>- Ajout d'un sticker</changelog>
 	<version>1.5.9</version>
