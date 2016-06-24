@@ -1,9 +1,5 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
-	<version>1.5.14</version>
-	<changelog>- Ajout de stickers- Suppression d'un bug empâchant des vidéos de charger au temps correct</changelog>
-	<version>1.5.13</version>
-	<changelog>- Ajout de stickers</changelog>
 	<version>1.5.12</version>
 	<changelog>- Ajout de stickers- Remplacement des stickers Store</changelog>
 	<version>1.5.11</version>
