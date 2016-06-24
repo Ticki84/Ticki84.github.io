@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.16</version>
+	<changelog>- Suppression d'un bug causant une erreur de lecture (Youtube)</changelog>
 	<version>1.5.15</version>
 	<changelog>- Ajout de stickers- Suppression d'un bug empêchant de lire les vidéos Youtube</changelog>
 	<version>1.5.14</version>
