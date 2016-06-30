@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.18</version>
+	<changelog>- Ajout de stickers- Remplacement de stickers périmés- Ajout d'une option</changelog>
 	<version>1.5.17</version>
 	<changelog>- Ajout de stickers- Suppression d'un bug empêchant la lecture des .webm</changelog>
 	<version>1.5.16</version>
