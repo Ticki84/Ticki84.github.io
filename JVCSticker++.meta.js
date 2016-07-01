@@ -3,7 +3,7 @@
 // @namespace   JVCSticker++
 // @include     http://www.jeuxvideo.com/forums/*
 // @include     https://www.jeuxvideo.com/forums/*
-// @version     1.5.18
+// @version     1.5.19
 // @grant       GM_addStyle
 // @updateURL   https://ticki84.github.io/JVCSticker++.meta.js
 // @downloadURL https://ticki84.github.io/JVCSticker++.user.js
@@ -13,9 +13,8 @@
 // @grant       GM_xmlhttpRequest
 // @grant       GM_getValue
 // @grant       GM_setValue
-// grant       GM_listValues
-// grant       GM_deleteValue
-// grant       GM_log
+// @grant       GM_listValues
+// @grant       GM_deleteValue
 // @icon        http://jv.stkr.fr/p/1kki
 // @author      Ticki84
 // @copyright   2016+, Ticki84

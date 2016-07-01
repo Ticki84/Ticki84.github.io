@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.19</version>
+	<changelog>- Ajout de catégories- Ajout de stickers- Ajout d'un son pour les stickers Risitas</changelog>
 	<version>1.5.18</version>
 	<changelog>- Ajout de stickers- Remplacement de stickers périmés- Ajout d'une option</changelog>
 	<version>1.5.17</version>
