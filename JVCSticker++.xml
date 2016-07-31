@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.5.23</version>
+	<changelog>- Ajout de stickers- Remplacement du sticker Risitas buggé- Test de suppression d'un bug</changelog>
 	<version>1.5.22</version>
 	<changelog>- Ajout de stickers</changelog>
 	<version>1.5.21</version>
