@@ -3,13 +3,14 @@
 // @namespace   JVCSticker++
 // @include     http://www.jeuxvideo.com/forums/*
 // @include     https://www.jeuxvideo.com/forums/*
-// @version     1.6.0
+// @version     1.6.1
 // @grant       GM_addStyle
 // @updateURL   https://ticki84.github.io/JVCSticker++.meta.js
 // @downloadURL https://ticki84.github.io/JVCSticker++.user.js
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @require     https://ticki84.github.io/jquery.modal.min.js
 // @connect     github.io
+// @connect     jvcsticker.site88.net
 // @grant       GM_xmlhttpRequest
 // @grant       GM_getValue
 // @grant       GM_setValue
