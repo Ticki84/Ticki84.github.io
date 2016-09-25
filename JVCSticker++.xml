@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>1.6.2</version>
+	<changelog>- Ajout d'un historique- Modification du tri de la catégorie populaire- Ajouts de sons</changelog>
 	<version>1.6.1</version>
 	<changelog>- Correctif pour Chrome- Optimisation- Correction de bugs</changelog>
 	<version>1.6.0</version>
