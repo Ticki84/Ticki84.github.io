@@ -1,11 +1,11 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>2.0.0</version>
+	<changelog>- Refonte complète du système- Optimisation énorme du script- Ajout d'un système de favoris- Barre de recherche- Système de demandes intégrés!- Corrections et améliorations diverses</changelog>
 	<version>1.6.2</version>
 	<changelog>- Ajout d'un historique- Modification du tri de la catégorie populaire- Ajouts de sons</changelog>
-	<actions>resetFav;</actions>
 	<version>1.6.1</version>
 	<changelog>- Correctif pour Chrome- Optimisation- Correction de bugs</changelog>
-	<actions>resetDefaultCat;resetFav;Lol;</actions>
 	<version>1.6.0</version>
 	<changelog>- Les stickers sont désormais tous triés par popularité- La catégorie populaire est maintenant liée au script- Ajout d'un lecteur de Vocaroo- Ajout d'options- Correction de bugs- Ajout de stickers- Ajout de sons- Remplacement de stickers</changelog>
 	<version>1.5.24</version>
