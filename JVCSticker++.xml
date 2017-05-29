@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>2.0.3</version>
+	<changelog>- Correction d'un bug empêchant l'annonce des MàJs</changelog>
 	<version>2.0.2</version>
 	<changelog>- Correctifs (2 bugs)- Ajout d'un raccourci</changelog>
 	<version>2.0.1</version>
