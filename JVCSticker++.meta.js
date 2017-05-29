@@ -3,7 +3,7 @@
 // @namespace   JVCSticker++
 // @include     http://www.jeuxvideo.com/forums/*
 // @include     https://www.jeuxvideo.com/forums/*
-// @version     2.0.0
+// @version     2.0.1
 // @grant       GM_addStyle
 // @updateURL   https://ticki84.github.io/JVCSticker++.meta.js
 // @downloadURL https://ticki84.github.io/JVCSticker++.user.js
@@ -12,7 +12,7 @@
 // @require     https://swisnl.github.io/jQuery-contextMenu/dist/jquery.contextMenu.js
 // @require     https://swisnl.github.io/jQuery-contextMenu/dist/jquery.ui.position.min.js
 // @connect     github.io
-// @connect     jvcsticker.esy.es
+// @connect     jvcstckr.comli.com
 // @grant       GM_xmlhttpRequest
 // @grant       GM_getValue
 // @grant       GM_setValue

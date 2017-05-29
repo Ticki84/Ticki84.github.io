@@ -1,5 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
 <racine>
+	<version>2.0.1</version>
+	<changelog>- Correctif (changement d'hébergeur)</changelog>
 	<version>2.0.0</version>
 	<changelog>- Refonte complète du système- Optimisation énorme du script- Ajout d'un système de favoris- Barre de recherche- Système de demandes intégrés!- Corrections et améliorations diverses</changelog>
 	<version>1.6.2</version>
